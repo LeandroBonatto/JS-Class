@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Program</title>
+    <title>Ex003</title>
     <style>
         body {
             background-color: rgb(105, 105, 173);
@@ -17,9 +17,12 @@
     <h1>Hello World</h1> <!-- Comment in html -->
     <p>I'm free from the curse</p>
     <script>
-        var n1 = window.prompt('Write any number: ')
-        var n2 = window.prompt('Write another number: ')
-       
+        var n1 = Number.parseInt(window.prompt('Write any number: '))
+        var n2 = Number.parseInt(window.prompt('Write another number: '))
+        var sum = n1 + n2
+        window.alert('Sum up is: ' + sum)  //concatenation
+        // (number + number) = add
+        // (string + string) = concat
     </script>
 </body>
 </html>
