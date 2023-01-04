@@ -17,10 +17,10 @@
     <h1>Hello World</h1> <!-- Comment in html -->
     <p>I'm free from the curse</p>
     <script>
-        var n1 = Number.parseFloat(window.prompt('Write any number: '))
-        var n2 = Number.parseFloat(window.prompt('Write another number: '))
+        var n1 = Number(window.prompt('Write any number: '))
+        var n2 = Number(window.prompt('Write another number: '))
         var sum = n1 + n2
-        window.alert('Sum up is: ' + sum)  //concatenation
+        window.alert('Sum up is: ' + String(sum))  //concatenation
         // (number + number) = add
         // (string + string) = concat
     </script>
