@@ -18,11 +18,17 @@
     <h1>Starting with DOM</h1>
     <p>Result</p>
     <p>Learning how to use <strong>DOM</strong> in JS.</p>
-    <div>Click Here</div>
+    <div id="msg">Click Here</div>
     <script>
         var p1 = window.document.getElementsByTagName('p')[0]
         window.document.write('It is: ' + p1.innerText)
         p1.style.color = 'blue'
+        /* var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'I am waiting....' 
+        */
+        
+
     </script>
 </body>
 </html>
