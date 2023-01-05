@@ -18,13 +18,14 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="click()">
+    <div id="area" onclick="clicar()" onmouseenter="entrar()">
         Use...
     </div>
 
     <script>
-        function click() {
-            
+        function clicar() {
+            var a = window.document.getElementById('area')
+            a.innerText = 'Clicked'
         }
 
     </script>
