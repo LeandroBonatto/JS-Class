@@ -18,7 +18,7 @@
     <h1>Starting with DOM</h1>
     <p>Result</p>
     <p>Learning how to use <strong>DOM</strong> in JS.</p>
-    <div id="msg">Click Here</div>
+    <div class="msg">Click Here</div>
     <script>
         var p1 = window.document.getElementsByTagName('p')[0]
         window.document.write('It is: ' + p1.innerText)
@@ -27,8 +27,8 @@
         d.style.background = 'green'
         d.innerText = 'I am waiting....' 
         */
-        var d = window.document.getElementsByName('msg')[0]
-        d.innerText = 'Hello'
+        var d = window.document.querySelector('div.msg')
+        d.style.background = 'blue'
 
     </script>
 </body>
