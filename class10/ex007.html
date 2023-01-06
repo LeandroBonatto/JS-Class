@@ -5,21 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sum up</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Sum</h1>
-    <input type="number" name="txt1" id="txt1">
-    <input type="number" name="txt2" id="txt2">
-    <input type="button" value="sum" onclick="Sum()">
+    <h1>Sum Up</h1>
+    <input type="number" name="txtn1" id="txtn1"> + 
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Sum" onclick="Sum()">
     <div id="res">Result</div>
 
     <script>
-        function sum() {
+        function Sum() {
             var tn1 = window.document.getElementById('txtn1')
             var tn2 = window.document.querySelector('input#txtn2')
             var res = window.document.getElementById('res')
-            var n1 = Number.parseInt(tn1.value)
-            var n2 = Number.parseInt(tn2.value)
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
             var s = n1 + n2
             res.innerHTML = `The sum between ${n1} and ${n2} is ${s}`
         }
