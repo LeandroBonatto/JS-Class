@@ -8,6 +8,16 @@
 </head>
 <body>
     <h1>Speed Limit Test</h1>
-    Car Speed: <input type="number" name="" id="">
+    Car Speed: <input type="number" name="txtspeed" id="txtspeed"> kph
+    <input type="button" value="Verified" onclick="Calculate">
+    <div id="res">
+
+    </div>
+
+    <script>
+        var txtspeed = window.document.getElementById('input#txtspeed')
+        var vel = Number(txtspeed.value)
+    </script>
+
 </body>
 </html>
