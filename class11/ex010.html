@@ -9,14 +9,19 @@
 <body>
     <h1>Speed Limit Test</h1>
     Car Speed: <input type="number" name="txtspeed" id="txtspeed"> kph
-    <input type="button" value="Verified" onclick="Calculate">
+    <input type="button" value="Check" onclick="Calculate()">
     <div id="res">
 
     </div>
-
     <script>
+        function Calculate() {
         var txtspeed = window.document.getElementById('input#txtspeed')
-        var vel = Number(txtspeed.value)
+        var res = window.document.querySelector('div#res')
+        var speed = Number(txtspeed.value)
+        res.innerHTML = `<p>Your speed is <strong>${speed} kph </strong></p>`
+        res.innerHTML = `<p>Fasten your seat belt.</p>`
+
+    }
     </script>
 
 </body>
