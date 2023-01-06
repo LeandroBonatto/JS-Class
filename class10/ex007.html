@@ -10,11 +10,18 @@
     <h1>Sum</h1>
     <input type="number" name="txt1" id="txt1">
     <input type="number" name="txt2" id="txt2">
-    <input type="button" value="Result" onclick="Result()">
+    <input type="button" value="sum" onclick="Sum()">
+    <div id="res">Result</div>
 
     <script>
         function sum() {
-            
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.querySelector('input#txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number.parseInt(tn1.value)
+            var n2 = Number.parseInt(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `The sum between ${n1} and ${n2} is ${s}`
         }
 
 
