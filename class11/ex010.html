@@ -8,18 +8,21 @@
 </head>
 <body>
     <h1>Speed Limit Test</h1>
-    Car Speed: <input type="number" name="txtspeed" id="txtspeed"> kph
-    <input type="button" value="Check" onclick="Calculate()">
+    Car Speed: <input type="number" name="txtvel" id="txtvel"> kph
+    <input type="button" value="Check" onclick="calc()">
     <div id="res">
 
     </div>
     <script>
-        function Calculate() {
-        var txtspeed = window.document.getElementById('input#txtspeed')
+        function calc() {
+        var txtv = window.document.getElementById('input#txtvel')
         var res = window.document.querySelector('div#res')
-        var speed = Number(txtspeed.value)
-        res.innerHTML = `<p>Your speed is <strong>${speed} kph </strong></p>`
-        res.innerHTML = `<p>Fasten your seat belt.</p>`
+        var vel = Number(txtv.value)
+        res.innerHTML = `<p>Your speed is <strong>${vel} kph </strong></p>`
+        if (vel > 60) {
+            res.innerHTML += `<p>You are <strong>Fined</strong>. Your speed is over limit.`
+        }
+        res.innerHTML += `<p>Fasten your seat belt.</p>`
 
     }
     </script>
