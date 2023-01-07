@@ -11,10 +11,19 @@ function count() {
         let s = Number(start.value)
         let e = Number(end.value)
         let p = Number(pace.value)
+        if ( s < e) {
+            // COUNTING UP
+            for(let c = s; c <= e; c += p) {
+                res.innerHTML += ` ${c} \u{1F449}`
+            }
+            res.innerHTML += `\u{1F3C1}`
 
-        for(let c = s; c <= e; c += p) {
-            res.innerHTML += ` ${c} \u{1F449}`
+        } else {
+             // COUNTING DOWN
+            for(let c = s; c >= e; c -= p) {
+                res.innerHTML += ` ${c} \u{1F449}`
+            }
         }
-        res.innerHTML += 
+        res.innerHTML += `\u{1F3C1}`
     }
 }
