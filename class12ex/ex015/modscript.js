@@ -12,28 +12,39 @@ function verify() {
         var img = document.createElement('img')
         img.setAttribute('id','foto')
         if (fgender[0].checked) {
-            gender = 'male'
+            gender = 'Male'
             if (age >= 0 && age < 10) {
                 // kid
+                img.setAttribute('src', 'baby-m.jpg')
             } else if (age < 21) {
                 // young
+                img.setAttribute('src', 'young-m.jpg')
             } else if (age < 50) {
                 // adult
+                img.setAttribute('src', 'adult-m.jpg')
             } else {
                 // old
+                img.setAttribute('src', 'old-m.jpg')
             }
         }
-        if (fgender[0].checked) {
-            gender = 'male'
+        if (fgender[1].checked) {
+            gender = 'Female'
             if (age >= 0 && age < 10) {
                 // kid
+                img.setAttribute('src', 'baby-f.jpg')
             } else if (age < 21) {
                 // young
+                img.setAttribute('src', 'young-f.jpg')
             } else if (age < 50) {
                 // adult
+                img.setAttribute('src', 'adult-f.jpg')
             } else {
                 // old
+                img.setAttribute('src', 'old-f.jpg')
             }
         }
+        res.style.textAlign = 'center'
+        res.innerHTML = `Detected ${gender} with ${age} years.`
+        res.appendChild(img)
     }
 }
