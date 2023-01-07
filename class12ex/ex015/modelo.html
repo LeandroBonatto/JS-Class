@@ -17,14 +17,17 @@
                 <input type="number" name="txtyear" id="txtyear" min="0">
             </p>
             <p>Gender:
-                <input type="radio" name="radgender" id="man" checked>
-                <label for="man">Man</label>
+                <input type="radio" name="radgender" id="male" checked>
+                <label for="male">Male</label>
                 <input type="radio" name="radgender" id="fem">
                 <label for="fem">Female</label>
             </p>
+            <p>
+                <input type="button" value="Check" onclick="verify()">
+            </p>
         </div>
-        <div>
-            Hello!
+        <div id="res">
+            Fill up to see the results
         </div>
     </section>
     <footer>
