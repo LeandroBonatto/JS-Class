@@ -8,5 +8,13 @@ function count() {
         window.alert('[ERROR] Missing field')
     } else {
         res.innerHTML = 'Counting: '
+        let s = Number(start.value)
+        let e = Number(end.value)
+        let p = Number(pace.value)
+
+        for(let c = s; c <= e; c += p) {
+            res.innerHTML += ` ${c} \u{1F449}`
+        }
+        res.innerHTML += 
     }
 }
