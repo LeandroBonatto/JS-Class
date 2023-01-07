@@ -2,8 +2,7 @@ var c = 1
 do {
     console.log(`Passo ${c}`)
     c++
-} while (c <= 6)
-
+} while (c <= 9)
 
 /* var c = 1
 while (c <= 6) {
@@ -11,7 +10,6 @@ while (c <= 6) {
     c++
 }
 */
-
 
 /*
 console.log('How are you?')
