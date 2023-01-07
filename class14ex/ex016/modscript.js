@@ -11,6 +11,10 @@ function count() {
         let s = Number(start.value)
         let e = Number(end.value)
         let p = Number(pace.value)
+        if (p <= 0) {
+            window.alert('Invalid pace')
+            p = 1
+        }
         if ( s < e) {
             // COUNTING UP
             for(let c = s; c <= e; c += p) {
