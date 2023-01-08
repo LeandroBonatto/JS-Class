@@ -11,4 +11,6 @@ console.log(values[2])
 .
 */
 
-for (let pos=0; pos < values.length; pos++)
+for (let pos=0; pos < values.length; pos++) {
+    console.log(`The position ${pos} has the value ${values[pos]}`)
+}
