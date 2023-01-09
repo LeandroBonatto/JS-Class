@@ -1,4 +1,3 @@
-
 // recursion
 function factorial(n) {
     if(n == 1) {
@@ -8,6 +7,7 @@ function factorial(n) {
     }
 }
 
+console.log(factorial(5))
 
 
 /*
